@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Privacy Policy — FishDeck</title>
+  <style>
+    :root { color-scheme: light dark; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; line-height: 1.55; max-width: 42rem; margin: 2rem auto; padding: 0 1.25rem; }
+    a { color: #0b57d0; }
+    nav { display: flex; gap: 1rem; margin-bottom: 1.5rem; font-size: 0.95rem; }
+    h1 { font-size: 1.75rem; }
+    h2 { margin-top: 1.75rem; font-size: 1.25rem; }
+    h3 { margin-top: 1.25rem; font-size: 1.05rem; }
+    table { border-collapse: collapse; width: 100%; margin: 1rem 0; font-size: 0.95rem; }
+    th, td { border: 1px solid color-mix(in srgb, CanvasText 25%, transparent); padding: 0.45rem 0.55rem; text-align: left; vertical-align: top; }
+    ul { padding-left: 1.2rem; }
+    .muted { opacity: 0.75; font-size: 0.9rem; }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="./index.html">Home</a>
+    <a href="./privacy.html">Privacy</a>
+    <a href="./support.html">Support</a>
+  </nav>
+  <h1>FishDeck Privacy Policy</h1>
+<p>Applies to: FishDeck iOS v1.0 local-first release (`com.gigglegrig.fishdeck`)</p>
+<p>Last updated: 2026-07-15</p>
+<p>Effective date: 2026-07-16</p>
+<p>This policy describes the shipped local-first v1.0 product. It does not cover future account, cloud sync, analytics, ads, tracking, AI, or social features.</p>
+<h2>Who we are</h2>
+<p>FishDeck is a personal fishing journal app published by gigglegrig (“we”, “us”).</p>
+<p>Contact for privacy questions: open an issue at <a href="https://github.com/gigglegrig/fishdeck/issues">https://github.com/gigglegrig/fishdeck/issues</a> (include “Privacy” in the title).</p>
+<h2>Summary</h2>
+<p>FishDeck v1.0 stores your fishing catch records on your device. We do not require an account. We do not operate a FishDeck cloud backend for catch data in v1.0. We do not sell your data. We do not use third-party advertising or analytics SDKs in v1.0.</p>
+<h2>Information stored on your device</h2>
+<p>Depending on how you use the app, FishDeck may store on your device:</p>
+<ul>
+<li>Catch records you create (species, date/time, notes, measurements, and related journal fields)</li>
+<li>Photos you attach to catches (camera or photo library)</li>
+<li>Location coordinates you choose to record for a catch, or that are read from a photo’s EXIF metadata when available</li>
+<li>Local preferences and UI session state (for example filters or last-used views)</li>
+<li>Bundled catalog and artwork that ships with the app</li>
+</ul>
+<p>This information stays in on-device storage (including local SQLite and app documents). Uninstalling FishDeck removes the app’s local data from that device, subject to normal iOS storage behavior.</p>
+<h2>Permissions you control</h2>
+<p>FishDeck may ask for:</p>
+<table>
+<tr><th>Permission</th><th>Why</th></tr>
+<tr><td>Location (When In Use)</td><td>Show your position on the map and record catch locations when you choose</td></tr>
+<tr><td>Camera</td><td>Take catch photos</td></tr>
+<tr><td>Photo Library</td><td>Attach existing photos to catches</td></tr>
+<tr><td>Photo Library Add</td><td>Save catch cards or photos to your library when you choose</td></tr>
+</table>
+<p>You can deny any permission. Core journaling still works without location or photos; related features are limited until you allow them.</p>
+<h2>Network use</h2>
+<p>FishDeck v1.0 does not upload your catch journal, photos, notes, or exact fishing coordinates to a FishDeck server.</p>
+<p>The app may use Apple MapKit / Apple Maps tile and related map services through `react-native-maps` so maps can render. That traffic is handled by Apple under Apple’s terms and privacy practices, not by a FishDeck backend.</p>
+<p>There is no FishDeck account login, no FishDeck cloud backup, no in-app purchases, no ads network, and no analytics SDK in this v1.0 build.</p>
+<h2>Sharing you initiate</h2>
+<p>If you export, share, or save a catch card or photo, that image leaves the app under your control (for example Messages, Photos, or another app you choose). We cannot recall images you already shared outside FishDeck.</p>
+<h2>Children</h2>
+<p>FishDeck is not directed at children under 13. Do not use the app to store someone else’s personal information without an appropriate basis to do so.</p>
+<h2>Data deletion</h2>
+<p>Because v1.0 is local-first and has no FishDeck account:</p>
+<ul>
+<li>Delete individual catches inside the app when that control is available</li>
+<li>Remove photos from a catch inside the app when that control is available</li>
+<li>Uninstall the app to remove remaining FishDeck local data from that device</li>
+</ul>
+<p>There is no cloud copy for us to delete in v1.0.</p>
+<h2>Changes</h2>
+<p>If FishDeck later adds accounts, cloud sync, analytics, or other data practices, we will update this Privacy Policy and App Store privacy disclosures before those features ship.</p>
+<h2>Contact</h2>
+<p>Contact: <a href="https://github.com/gigglegrig/fishdeck/issues">https://github.com/gigglegrig/fishdeck/issues</a></p>
+<p><em>This page describes FishDeck iOS v1.0. It is not legal advice.</em></p>
+</body>
+</html>
