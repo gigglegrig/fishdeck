@@ -20,7 +20,7 @@
   <p class="eyebrow">Privacy Policy</p>
   <h1>Your journal stays yours.</h1>
   <p class="intro">This policy explains what OhMyCatch keeps on your device, which permissions are optional, and when outside services are used.</p>
-  <p class="meta">Applies to OhMyCatch iOS &amp; Android (v1.0.0, v1.1.0, and future releases) · Last updated July 30, 2026</p>
+  <p class="meta">Applies to OhMyCatch iOS &amp; Android (v1.0.0, v1.1.0, and future releases) · Last updated August 13, 2026</p>
   <div class="card">
 <p>This Privacy Policy describes how OhMyCatch handles user data across all supported mobile operating systems (including iOS and Android) and all app releases (including version 1.0.0, version 1.1.0, and future local-first releases).</p>
 <h2>Who we are</h2>
@@ -33,7 +33,7 @@
 <ul>
 <li>Catch records you create (species, date/time, notes, measurements, and related journal fields)</li>
 <li>Photos you attach to catches (camera or photo library)</li>
-<li>Location coordinates you choose to record for a catch, or that are read from a photo’s EXIF metadata when available</li>
+<li>Location coordinates — including precise location — you choose to record for a catch, or that are read from a photo’s EXIF metadata when available</li>
 <li>Local preferences and UI session state (for example filters, unit preferences, or last-used views)</li>
 <li>Bundled catalog and artwork that ships with the app</li>
 </ul>
@@ -42,11 +42,13 @@
 <p>OhMyCatch may ask for permissions on your device:</p>
 <table>
 <tr><th>Permission</th><th>Why</th></tr>
-<tr><td>Location (When In Use / Foreground)</td><td>Show your position on the map and record catch locations when you choose</td></tr>
+<tr><td>Precise location (When In Use / Foreground)</td><td>Show your position on the map and record catch locations when you choose</td></tr>
 <tr><td>Camera</td><td>Take catch photos</td></tr>
 <tr><td>Photo Library / Media Access</td><td>Attach existing photos to catches or save catch cards to your photo library</td></tr>
 </table>
 <p>You can deny any permission. Core journaling still works without location or photos; related features are limited until you allow them.</p>
+<h2>Precise location</h2>
+<p>When you choose to set a catch location or show your position on the map, OhMyCatch may access your device’s precise location in the foreground. Precise location is used only to place pins and record catch spots; it is stored locally with your catch records and is never uploaded to an OhMyCatch server. Map rendering itself is provided by Apple or Google under their own terms.</p>
 <h2>Network use</h2>
 <p>OhMyCatch does not upload your catch journal, photos, notes, or exact fishing coordinates to an OhMyCatch server.</p>
 <p>The app may load map tiles and related location services through standard system map components (Apple Maps / Google Maps via <code>react-native-maps</code>) so maps can render. That traffic is handled directly by Apple or Google under their respective terms and privacy practices, not by an OhMyCatch backend.</p>
@@ -74,7 +76,7 @@
   <p class="eyebrow">隐私政策</p>
   <h1>你的日记永远属于你。</h1>
   <p class="intro">本政策说明 OhMyCatch 在你的设备上保存哪些内容、哪些权限是可选的、以及何时会使用外部服务。</p>
-  <p class="meta">适用于 OhMyCatch iOS 与 Android（v1.0.0、v1.1.0 及后续版本）· 最后更新：2026 年 7 月 30 日</p>
+  <p class="meta">适用于 OhMyCatch iOS 与 Android（v1.0.0、v1.1.0 及后续版本）· 最后更新：2026 年 8 月 13 日</p>
   <div class="card">
 <p>本隐私政策说明 OhMyCatch 在所有受支持的移动操作系统（包括 iOS 和 Android）以及所有应用版本（包括 1.0.0、1.1.0 及后续本地优先版本）中如何处理用户数据。</p>
 <h2>我们是谁</h2>
@@ -87,7 +89,7 @@
 <ul>
 <li>你创建的渔获记录（鱼种、日期/时间、备注、尺寸及相关的日记字段）</li>
 <li>你附加到渔获的照片（相机或相册）</li>
-<li>你选择记录的渔获位置坐标，或从照片 EXIF 元数据中读取的坐标（如可用）</li>
+<li>你选择记录的渔获位置坐标（包括精确位置），或从照片 EXIF 元数据中读取的坐标（如可用）</li>
 <li>本地偏好设置和界面会话状态（例如筛选条件、单位偏好或最近使用的视图）</li>
 <li>随应用内置的图鉴和美术资源</li>
 </ul>
@@ -96,11 +98,13 @@
 <p>OhMyCatch 可能会请求你的设备权限：</p>
 <table>
 <tr><th>权限</th><th>用途</th></tr>
-<tr><td>位置（使用时 / 前台）</td><td>在地图上显示你的位置，并在你选择时记录渔获地点</td></tr>
+<tr><td>精确位置（使用时 / 前台）</td><td>在地图上显示你的位置，并在你选择时记录渔获地点</td></tr>
 <tr><td>相机</td><td>拍摄渔获照片</td></tr>
 <tr><td>相册 / 媒体访问</td><td>将已有照片附加到渔获，或将渔获卡片保存到相册</td></tr>
 </table>
 <p>你可以拒绝任何权限。没有位置或照片，核心日记功能仍然可用；相关功能会在允许权限后恢复。</p>
+<h2>精确位置</h2>
+<p>当你选择设置渔获地点或在地图上显示自己的位置时，OhMyCatch 可能会在前台访问你设备的精确位置。精确位置仅用于放置图钉和记录渔获地点；它与你的渔获记录一起保存在本地，绝不会上传到 OhMyCatch 服务器。地图渲染本身由 Apple 或 Google 按其各自条款提供。</p>
 <h2>网络使用</h2>
 <p>OhMyCatch 不会将你的渔获日记、照片、备注或精确钓鱼坐标上传到 OhMyCatch 服务器。</p>
 <p>应用可能通过标准的系统地图组件（通过 <code>react-native-maps</code> 使用 Apple 地图 / Google 地图）加载地图瓦片及相关位置服务，以便地图正常渲染。这部分流量由 Apple 或 Google 按其各自的条款和隐私实践直接处理，而非由 OhMyCatch 后端处理。</p>
