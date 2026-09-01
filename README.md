@@ -1,6 +1,6 @@
 # OhMyCatch public pages
 
-Hosts the App Store–facing Privacy Policy and Support pages for OhMyCatch iOS.
+Hosts the App Store- and Play Store-facing Privacy Policy and Support pages for OhMyCatch iOS and Android.
 
 Publisher: **XI SUN** (operating as gigglegrig / OhMyCatch)
 
@@ -14,4 +14,4 @@ Publisher: **XI SUN** (operating as gigglegrig / OhMyCatch)
 
 Bundle ID: `com.gigglegrig.ohmycatch`
 
-Contact for v1.0: [GitHub Issues](https://github.com/gigglegrig/fishdeck/issues) until a dedicated support email is confirmed.
+Privacy contact: `sx4490550@gmail.com` (include “Privacy” in the subject). Product support remains available through the published support page.
