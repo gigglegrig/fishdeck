@@ -22,9 +22,9 @@
   <p class="eyebrow">Privacy Policy</p>
   <h1>Your journal stays yours.</h1>
   <p class="intro">This policy explains what OhMyCatch keeps on your device, which permissions are optional, and when outside services are used.</p>
-  <p class="meta">Applies to OhMyCatch iOS &amp; Android (v1.3.0 and future releases) · Last updated September 12, 2026</p>
+  <p class="meta">Applies to OhMyCatch iOS &amp; Android (v1.4.0 and future releases) · Last updated September 16, 2026</p>
   <div class="card">
-<p>This Privacy Policy describes how OhMyCatch handles user data across all supported mobile operating systems (including iOS and Android) and app release 1.3.0 and later local-first releases.</p>
+<p>This Privacy Policy describes how OhMyCatch handles user data across all supported mobile operating systems (including iOS and Android) and app release 1.4.0 and later local-first releases.</p>
 <h2>Who we are</h2>
 <p>OhMyCatch is a personal fishing journal app published by XI SUN (“we”, “us”), operating as gigglegrig / OhMyCatch.</p>
 <p>Contact for privacy questions: <a href="mailto:sx4490550@gmail.com?subject=OhMyCatch%20Privacy">sx4490550@gmail.com</a> (include “Privacy” in the subject).</p>
@@ -51,10 +51,11 @@
 </table>
 <p>You can deny any permission. Core journaling still works without location or photos; related features are limited until you allow them.</p>
 <h2>Selected photo metadata</h2>
-<p>When you select an existing photo, OhMyCatch may read its capture date/time and, when available, its GPS location metadata. This happens on your device and is used to prefill catch details for your review. The selected photo, EXIF metadata, and any saved catch details remain in local app storage. OhMyCatch does not send photo bytes, EXIF, GPS metadata, or generated location labels to its own backend or to PostHog.</p>
+<p>When you select an existing photo, OhMyCatch may read its capture date/time and, when available, its GPS location metadata. This happens on your device and is used to prefill catch details for your review. The selected photo, EXIF metadata, and any saved catch details remain in local app storage.</p>
 <h2>AI Fish Identification</h2>
-<p>When you choose to use the optional AI Fish Identification feature, OhMyCatch securely transmits the selected catch photo over HTTPS to our backend service (hosted on Cloudflare Workers) and Google Gemini AI solely to analyze visual characteristics and suggest fish species matches.</p>
-<p>Photos sent for recognition are processed ephemerally and are not used to train artificial intelligence models, nor are they retained on our servers after recognition completes. Catch notes, catch measurements (length and weight), precise fishing coordinates, and personal device identifiers are never transmitted to the AI identification service.</p>
+<p>AI Fish ID is optional. When you explicitly request recognition, OhMyCatch securely transmits the selected catch photo, available capture time and coordinates for that photo, and an anonymous service identifier over HTTPS to the OhMyCatch recognition service (hosted on Cloudflare Workers) and its AI processing provider (DeepSeek). This data is used solely to analyze visual characteristics, return fish-species suggestions, enforce subscription quota, prevent duplicate processing, secure the service, and diagnose failures.</p>
+<p>Photos sent for recognition are stored temporarily in secure cloud storage (Cloudflare R2) and deleted automatically after processing or expiry (within 30 days). Recognition results and operational ledger records may be retained for bounded service operation, fraud prevention, quota accounting, and deletion handling. The app does not send notes, contact information, advertising identifiers, or the rest of the catch journal with an AI request.</p>
+<p>AI suggestions can be wrong. They are not regulatory, safety, or legal advice.</p>
 <h2>Subscriptions and In-App Purchases</h2>
 <p>OhMyCatch offers optional auto-renewable subscriptions (such as AI Fish ID) billed through Apple's App Store In-App Purchase system (StoreKit). All financial transactions, payments, renewals, and cancellations are handled directly by Apple.</p>
 <p>OhMyCatch stores only anonymous cryptographic receipt data and anonymous session tokens in your device's secure Keychain to verify your subscription access. We do not receive, collect, or store payment card numbers, billing addresses, or bank details.</p>
@@ -90,9 +91,9 @@
   <p class="eyebrow">隐私政策</p>
   <h1>你的日记永远属于你。</h1>
   <p class="intro">本政策说明 OhMyCatch 在你的设备上保存哪些内容、哪些权限是可选的、以及何时会使用外部服务。</p>
-  <p class="meta">适用于 OhMyCatch iOS 与 Android（v1.3.0 及后续版本）· 最后更新：2026 年 9 月 12 日</p>
+  <p class="meta">适用于 OhMyCatch iOS 与 Android（v1.4.0 及后续版本）· 最后更新：2026 年 9 月 16 日</p>
   <div class="card">
-<p>本隐私政策说明 OhMyCatch 在所有受支持的移动操作系统（包括 iOS 和 Android）以及 1.3.0 及后续本地优先版本中如何处理用户数据。</p>
+<p>本隐私政策说明 OhMyCatch 在所有受支持的移动操作系统（包括 iOS 和 Android）以及 1.4.0 及后续本地优先版本中如何处理用户数据。</p>
 <h2>我们是谁</h2>
 <p>OhMyCatch 是一款个人钓鱼日记应用，由 XI SUN（“我们”）发布，以 gigglegrig / OhMyCatch 名义运营。</p>
 <p>隐私问题联系方式：<a href="mailto:sx4490550@gmail.com?subject=OhMyCatch%20Privacy">sx4490550@gmail.com</a>（请在主题中注明“Privacy”）。</p>
@@ -119,10 +120,11 @@
 </table>
 <p>你可以拒绝任何权限。没有位置或照片，核心日记功能仍然可用；相关功能会在允许权限后恢复。</p>
 <h2>所选照片的元数据</h2>
-<p>当你选择已有照片时，OhMyCatch 可能读取照片的拍摄日期/时间，以及可用时的 GPS 位置元数据。这些处理在你的设备上完成，只用于预填供你确认的渔获详情。所选照片、EXIF 元数据和保存后的渔获详情保存在应用本地存储中。OhMyCatch 不会将照片内容、EXIF、GPS 元数据或生成的位置标签发送到自己的后端或 PostHog。</p>
+<p>当你选择已有照片时，OhMyCatch 可能读取照片的拍摄日期/时间，以及可用时的 GPS 位置元数据。这些处理在你的设备上完成，只用于预填供你确认的渔获详情。所选照片、EXIF 元数据和保存后的渔获详情保存在应用本地存储中。</p>
 <h2>AI 鱼种识别</h2>
-<p>当你选择使用可选的 AI 鱼种识别功能时，OhMyCatch 会通过 HTTPS 安全将所选渔获照片传输至我们的后端服务（托管于 Cloudflare Workers），并通过 Google Gemini AI 进行视觉特征分析以提供鱼种候选建议。</p>
-<p>用于识别的照片仅在单次请求期间进行瞬态实时处理，绝不用于训练第三方人工智能模型，也不会在识别完成后保留在我们的服务器上。你的渔获备注、测量数据（长度与重量）、精确钓点坐标及个人设备标识绝不会发送给 AI 识别服务。</p>
+<p>AI 鱼种识别功能为可选服务。当你明确发起识别请求时，OhMyCatch 会通过 HTTPS 安全地将所选照片、该照片可用的拍摄时间与坐标上下文，以及匿名服务标识传输至 OhMyCatch 识别服务（托管于 Cloudflare Workers）及其 AI 处理提供商（DeepSeek）。该数据仅用于分析视觉特征、返回鱼种建议、执行订阅配额管理、防止重复处理、保障服务安全以及排查故障。</p>
+<p>发送用于识别的照片将临时保存在安全的云存储（Cloudflare R2）中，并在处理完成或过期后自动删除（最长 30 天）。识别结果与运行日志可能会在限定期限内保留以用于服务运行、反欺诈与配额核算。应用不会将你的个人备注、联系信息、广告标识符或其余日记内容随 AI 请求发送。</p>
+<p>AI 识别建议可能存在误差，不构成官方物种鉴定、垂钓法规或安全合规建议。</p>
 <h2>应用内购买与自动续期订阅</h2>
 <p>OhMyCatch 通过 Apple App Store 应用内购买系统（StoreKit）提供可选的自动续期订阅（如 AI 鱼种识别）。所有金融交易、扣费结算、续期及取消均由 Apple 直接处理。</p>
 <p>OhMyCatch 仅在设备的安全钥匙串（Keychain）中本地存储匿名的加密收据数据和会话令牌，用于验证你的订阅权限。我们不会接收、收集或存储支付卡号、账单地址或任何银行信息。</p>
